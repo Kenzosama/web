@@ -5,16 +5,10 @@ layout: default
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center teal-text text-lighten-2">Kenzo Mutsuda</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">YouTuber</h5>
         </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="{{site.url}}/assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -62,7 +56,7 @@ layout: default
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">YouTube channel with more than 50K subscribers</h5>
         </div>
       </div>
     </div>
@@ -75,8 +69,36 @@ layout: default
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>Recent videos</h4>
+          
+            <div class="col s12 m6 l3">
+              <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/FkKkqLc4kD8?rel=0" frameborder="0" allowfullscreen>
+                </iframe>
+              </div> 
+            </div>
+
+            <div class="col s12 m6 l3">
+              <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/R5ML-IUw6n4?rel=0" frameborder="0" allowfullscreen>
+                </iframe>
+              </div> 
+            </div>
+            
+            <div class="col s12 m6 l3">
+              <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/LEDlHupVv_I?rel=0" frameborder="0" allowfullscreen>
+                </iframe>
+              </div> 
+            </div>
+
+            <div class="col s12 m6 l3">
+              <div class="video-container">
+                <iframe width="853" height="480" src="//www.youtube.com/embed/ck8Q3I0NpVI?rel=0" frameborder="0" allowfullscreen>
+                </iframe>
+              </div> 
+            </div>
+
         </div>
       </div>
 
@@ -88,9 +110,27 @@ layout: default
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">More than 50 milion views every month</h5>
         </div>
       </div>
     </div>
     <div class="parallax"><img src="{{site.url}}/assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
+
+
+  {% assign sponsors = site.data.sponsors %}
+  <div class="container">
+    <div class="section">
+       <div class="row">
+          <div class="col s12">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Sponsors</h4>
+            {% for sponsor in sponsors %}
+            <div class="col s12">
+              <a href = "{{sponsor.url}}" > {% include sponsor_card.html %} </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>    
+      </div>
+    </div>
