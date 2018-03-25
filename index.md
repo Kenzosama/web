@@ -67,7 +67,7 @@ layout: default
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
+     
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Recent videos</h4>
           
@@ -99,7 +99,7 @@ layout: default
               </div> 
             </div>
 
-        </div>
+     
       </div>
 
     </div>
@@ -110,7 +110,7 @@ layout: default
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">More than 50 milion views every month</h5>
+          <h5 class="header col s12 light">More than 500K views every month</h5>
         </div>
       </div>
     </div>
